@@ -1,0 +1,13 @@
+version: '3.2'
+services:
+  dash:
+    build:
+      dockerfile: Dockerfile.dev
+      context: app
+    ports:
+      - 8080:8080
+    volumes:
+      - ./app:/app
+      - modules_dash:/app/node_modules
+volumes:
+  modules_dash:

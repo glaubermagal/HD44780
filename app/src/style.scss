@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata');
+
+$cl_primary: #666;
+$cl_secondary: #111;
+$cl_green_bg: #60a260;
+$cl_green_dark: #2c4408;
+$cl_green_light: #a9f737;
+$cl_green_lighter: #5b8023;
+$cl_text: #e0e0e0;
+
+@import "reset";
+
+.game {
+    width: 100%;
+    max-width: 760px;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    .board {
+        width: 125px;
+        float: left;
+
+        .display {
+            display: inline-block;
+            padding: 10px;
+            background: $cl_green_bg;
+            line-height: 0;
+        }
+
+        .square {
+            padding: 0;
+            margin: 0.5px;
+            width: 20px;
+            height: 20px;
+            background: $cl_green_dark;
+            border: 0;
+            outline: 0;
+            cursor: pointer;
+
+            &.selected {
+                background: $cl_green_light;
+            }
+        }
+    }
+
+    .output-code {
+        width: 100%;
+        width: calc(100% - 129px);
+        width: -webkit-calc(100% - 129px);
+        display: inline-block;
+        vertical-align: top;
+        margin-left: 4px;
+    }
+
+    .border {
+        padding: 20px;
+        border: 2px dashed $cl_green_bg;
+        margin-bottom: 20px;
+    }
+
+    .game-title {
+        font-size: 2.1rem;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+
+    code {
+        font-size: 12px;
+    }
+
+    .btn {
+        display: block;
+        margin-top: 5px;
+        width: 125px;
+        font-size: 12px;
+        border: 1px solid $cl_green_bg;
+        background: $cl_green_dark;
+        color: $cl_text;
+        text-transform: uppercase;
+        cursor: pointer;
+
+        &:hover {
+            background: $cl_green_lighter;
+        }
+    }
+
+    .liquid-crystal-settings {
+        font-family: 'Inconsolata', monospace;
+        width: 100%;
+        margin-bottom: 20px;
+        background: #333;
+
+        td {
+            padding: 6px;
+        }
+
+        input {
+            width: 40px;
+            padding: 4px;
+            font-size: 11px;
+            font-weight: bold;
+            background: #60a260;
+            border: 0;
+        }
+    }
+
+    .credits {
+        font-size: 18px;
+    }
+}

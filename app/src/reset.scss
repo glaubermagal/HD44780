@@ -1,0 +1,22 @@
+body, html {
+    margin: 0;
+    font-family: 'VT323', monospace;
+    font-size: 16px;
+    color: $cl_text;
+    background: $cl_secondary;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, strong, td, input, text {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    li {
+        list-style-type: none;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
